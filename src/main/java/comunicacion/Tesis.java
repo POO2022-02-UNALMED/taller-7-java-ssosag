@@ -62,7 +62,7 @@ public class Tesis extends Escrito{
 	}
 	
 	public int palabrasTotales(int paginas) {
-		int numeroPalabras = paginas*5; 
+		int numeroPalabras = getPaginas()*paginas*5; 
 		return numeroPalabras;
 	}
 
@@ -72,7 +72,7 @@ public class Tesis extends Escrito{
 	
 	public String toString() {
 		String informacion = getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" 
-	+ getPaginas() + "\n" + getIdea() + "\n" + getNumeroArgumentos() + "\n" + getConclusion()
+	+ getPaginas() + "\n" + getIdea() + "\n" + getNumeroArgumentos() + "\n" + getConclusion()+ "\n"
 	+getReferencias() + "\n" + getInterpretacion();
 	
 		return informacion;

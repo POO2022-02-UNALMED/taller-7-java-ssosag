@@ -33,11 +33,17 @@ public class Alfabeto extends Pictograma{
 	}
 	
 	public String toString() {
-		String alfabeto = "a, b, c, d, e, f, g,"
-				+ " h, i, j, k, l, m, n,"
-				+ " ñ, o, p, q, r, s, t,"
-				+ " u, v, w, x, y, z";
-		
+		String alfabeto = "";
+		int e = 0;
+		for(String i:letras) {
+			e += 1;
+			if(e != letras.length) {
+				alfabeto += i + ", ";
+			}
+			else {
+				alfabeto += i;
+			}
+		}
 		return alfabeto;
 	}
 	
